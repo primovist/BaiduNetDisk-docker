@@ -9,7 +9,7 @@ ENV USER="baidu"
 ENV UID=1000
 ENV GID=0
 ENV HOME=/home/${USER}
-ARG vnc_password=""
+ARG VNC_PASSWORD=""
 EXPOSE 5901 6080
 
 ADD xstartup ${HOME}/.vnc/
