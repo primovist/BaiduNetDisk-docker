@@ -17,7 +17,7 @@ sudo rm -f /tmp/.X*-lock /tmp/.X11-unix/X*
 sleep 3
 
 if [ -z $VNC_PASSWORD ]; then
-    /usr/bin/vncserver -geometry 1440x900 -localhost=no -fg -SecurityTypes None,TLSNone
+    /usr/bin/vncserver -geometry 1024x768 -localhost=no -fg -SecurityTypes None,TLSNone
 else
-    /usr/bin/vncserver -geometry 1440x900 -localhost=no -fg
+    /usr/bin/vncserver -geometry 1024x768 -localhost=no -fg --I-KNOW-THIS-IS-INSECURE
 fi
